@@ -1,15 +1,12 @@
 using System.Text;
-
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
-
 using OrderManagement.Api.Middlewares;
 using OrderManagement.Application;
 using OrderManagement.Infrastructure;
 using OrderManagement.Infrastructure.Persistence;
-
 using Serilog;
 
 
@@ -97,7 +94,7 @@ try
          In = ParameterLocation.Header,
 
          Description =
-             "Informe o token JWT no formato: Bearer {token}"
+             "Informe o token JWT no formato: token"
      });
 
 
@@ -156,13 +153,9 @@ try
         }
     }
 
-    if (app.Environment.IsDevelopment())
-    {
         app.UseSwagger();
 
         app.UseSwaggerUI();
-    }
-
 
 
     app.UseSerilogRequestLogging();
