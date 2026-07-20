@@ -1,13 +1,15 @@
-﻿using MediatR;
-using Microsoft.Extensions.DependencyInjection;
-using OrderManagement.Application.Behaviors;
-using System;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Text;
+﻿using System.Reflection;
+
 using FluentValidation;
 
+using MediatR;
+
+using Microsoft.Extensions.DependencyInjection;
+
+using OrderManagement.Application.Behaviors;
+
 namespace OrderManagement.Application;
+
 public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(

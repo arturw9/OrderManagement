@@ -1,10 +1,9 @@
 ﻿using AutoMapper;
+
 using MediatR;
+
 using OrderManagement.Application.DTOs;
 using OrderManagement.Application.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Application.Queries.GetOrders;
 

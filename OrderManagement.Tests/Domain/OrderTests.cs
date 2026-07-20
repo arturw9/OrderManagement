@@ -1,12 +1,11 @@
 ﻿using FluentAssertions;
+
 using OrderManagement.Domain.Entities;
 using OrderManagement.Domain.Enums;
 using OrderManagement.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Tests.Domain;
+
 public class OrderTests
 {
     [Fact]

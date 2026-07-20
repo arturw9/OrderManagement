@@ -1,14 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using OrderManagement.Application.Common;
 using OrderManagement.Application.Interfaces;
 using OrderManagement.Domain.Entities;
 using OrderManagement.Domain.Enums;
 using OrderManagement.Infrastructure.Persistence;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Infrastructure.Repositories;
+
 public class OrderRepository : IOrderRepository
 {
     private readonly AppDbContext _context;

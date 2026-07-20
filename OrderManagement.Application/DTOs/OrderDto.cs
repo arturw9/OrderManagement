@@ -1,9 +1,7 @@
 ﻿using OrderManagement.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Application.DTOs;
+
 public class OrderDto
 {
     public Guid Id { get; set; }

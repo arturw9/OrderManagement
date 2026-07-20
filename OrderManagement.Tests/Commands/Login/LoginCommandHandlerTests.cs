@@ -1,9 +1,10 @@
 ﻿using FluentAssertions;
+
 using Moq;
+
 using OrderManagement.Application.Commands.Login;
 using OrderManagement.Application.DTOs;
 using OrderManagement.Application.Interfaces;
-using Xunit;
 
 namespace OrderManagement.Tests.Commands.Login;
 
@@ -50,12 +51,12 @@ public class LoginCommandHandlerTests
             Password = "Senha@123"
         };
 
-            // Act
+        // Act
 
-            var result =
-            await _handler.Handle(
-                command,
-                CancellationToken.None);
+        var result =
+        await _handler.Handle(
+            command,
+            CancellationToken.None);
 
 
 

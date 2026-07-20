@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
+
 using OrderManagement.Application.DTOs;
 using OrderManagement.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Application.Mappings;
+
 public class OrderProfile : Profile
 {
 

@@ -28,9 +28,12 @@ dotnet_search_reference_assemblies = true
 #### Convenções de codificação .NET ####
 
 # Organizar Usos
-dotnet_separate_import_directive_groups = false
-dotnet_sort_system_directives_first = false
+dotnet_separate_import_directive_groups = true
+dotnet_sort_system_directives_first = true
 file_header_template = unset
+
+# Remover usings não utilizados
+dotnet_diagnostic.IDE0005.severity = warning
 
 # Preferências
 dotnet_style_qualification_for_event = false

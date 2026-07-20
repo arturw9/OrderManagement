@@ -1,8 +1,11 @@
-﻿using FluentValidation;
-using Microsoft.AspNetCore.Mvc;
-using OrderManagement.Domain.Exceptions;
-using System.Net;
+﻿using System.Net;
 using System.Text.Json;
+
+using FluentValidation;
+
+using Microsoft.AspNetCore.Mvc;
+
+using OrderManagement.Domain.Exceptions;
 
 namespace OrderManagement.Api.Middlewares;
 

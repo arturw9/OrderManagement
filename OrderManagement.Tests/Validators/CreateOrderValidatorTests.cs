@@ -1,11 +1,9 @@
-﻿using OrderManagement.Application.Commands.CreateOrder;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using FluentAssertions;
-using FluentValidation.TestHelper;
+﻿using FluentValidation.TestHelper;
+
+using OrderManagement.Application.Commands.CreateOrder;
 
 namespace OrderManagement.Tests.Validators;
+
 public class CreateOrderValidatorTests
 {
     private readonly CreateOrderValidator _validator = new();

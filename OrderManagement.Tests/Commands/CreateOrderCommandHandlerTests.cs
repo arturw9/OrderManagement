@@ -1,5 +1,7 @@
 ﻿using FluentAssertions;
+
 using Moq;
+
 using OrderManagement.Application.Commands.CreateOrder;
 using OrderManagement.Application.DTOs;
 using OrderManagement.Application.Interfaces;

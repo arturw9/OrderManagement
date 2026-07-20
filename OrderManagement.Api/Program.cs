@@ -1,13 +1,16 @@
+using System.Text;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
+
 using OrderManagement.Api.Middlewares;
 using OrderManagement.Application;
 using OrderManagement.Infrastructure;
 using OrderManagement.Infrastructure.Persistence;
+
 using Serilog;
-using System.Text;
 
 
 Log.Logger = new LoggerConfiguration()

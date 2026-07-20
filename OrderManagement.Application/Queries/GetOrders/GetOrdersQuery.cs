@@ -1,11 +1,10 @@
 ﻿using MediatR;
+
 using OrderManagement.Application.DTOs;
 using OrderManagement.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Application.Queries.GetOrders;
+
 public class GetOrdersQuery
     : IRequest<PaginatedResultDto<OrderDto>>
 {

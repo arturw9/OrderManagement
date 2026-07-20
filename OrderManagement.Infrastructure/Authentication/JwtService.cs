@@ -1,10 +1,12 @@
-﻿using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using OrderManagement.Application.DTOs;
-using OrderManagement.Application.Interfaces;
-using System.IdentityModel.Tokens.Jwt;
+﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+
+using OrderManagement.Application.DTOs;
+using OrderManagement.Application.Interfaces;
 
 namespace OrderManagement.Infrastructure.Authentication;
 

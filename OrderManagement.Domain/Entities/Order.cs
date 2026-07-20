@@ -1,10 +1,8 @@
 ﻿using OrderManagement.Domain.Enums;
 using OrderManagement.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Domain.Entities;
+
 public class Order
 {
     private readonly List<OrderItem> _items = new();

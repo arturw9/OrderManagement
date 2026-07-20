@@ -1,11 +1,10 @@
 ﻿using MediatR;
+
 using OrderManagement.Application.Interfaces;
 using OrderManagement.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Application.Commands.CreateOrder;
+
 public class CreateOrderCommandHandler
     : IRequestHandler<CreateOrderCommand, Guid>
 {

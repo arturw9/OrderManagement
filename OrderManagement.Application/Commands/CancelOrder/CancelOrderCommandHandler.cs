@@ -1,8 +1,6 @@
 ﻿using MediatR;
+
 using OrderManagement.Application.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Application.Commands.CancelOrder;
 

@@ -1,12 +1,14 @@
 ﻿using MediatR;
+
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+
 using OrderManagement.Application.Commands.CancelOrder;
 using OrderManagement.Application.Commands.CreateOrder;
 using OrderManagement.Application.DTOs;
 using OrderManagement.Application.Queries.GetOrderById;
 using OrderManagement.Application.Queries.GetOrders;
 using OrderManagement.Domain.Enums;
-using Microsoft.AspNetCore.Authorization;
 
 namespace OrderManagement.Api.Controllers;
 

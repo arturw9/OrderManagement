@@ -1,9 +1,7 @@
 ﻿using OrderManagement.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OrderManagement.Domain.Entities;
+
 public class OrderItem
 {
     public Guid Id { get; private set; }
