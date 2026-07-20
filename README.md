@@ -76,17 +76,14 @@ As migrations são aplicadas automaticamente durante a inicialização da API at
 
 ## Executar a API
 
-No menu superior cesse o projeto:
+No menu superior acesse o projeto:
 
 ```bash
 OrderManagement.Api
 ```
 
-Execute:
+Execute clicando no botão de depurar no menu.
 
-```bash
-Clicando no botão de depurar no menu superior
-```
 
 A API ficará disponível em:
 
