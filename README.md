@@ -66,15 +66,11 @@ dotnet restore
 
 ---
 
-## Executar migrations
+## Banco de dados
 
-Na raiz da solução:
+A aplicação utiliza SQLite.
 
-```bash
-dotnet ef database update \
---project OrderManagement.Infrastructure \
---startup-project OrderManagement.Api
-```
+As migrations são aplicadas automaticamente durante a inicialização da API através do Entity Framework Core.
 
 ---
 
@@ -95,13 +91,13 @@ dotnet run
 A API ficará disponível em:
 
 ```
-http://localhost:8080
+https://localhost:7104
 ```
 
 Swagger:
 
 ```
-http://localhost:8080/swagger
+https://localhost:7104/swagger
 ```
 
 ---
