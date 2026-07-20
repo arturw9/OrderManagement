@@ -1,0 +1,37 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using OrderManagement.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace OrderManagement.Infrastructure.Configurations;
+public class OrderConfiguration : IEntityTypeConfiguration<Order>
+{
+    public void Configure(EntityTypeBuilder<Order> builder)
+    {
+        builder.ToTable("Orders");
+
+        builder.HasKey(x => x.Id);
+
+        builder.Property(x => x.CustomerId)
+            .IsRequired();
+
+        builder.Property(x => x.Status)
+            .IsRequired();
+
+        builder.Property(x => x.CreatedAt)
+            .IsRequired();
+
+        builder.Ignore(x => x.Total);
+
+        builder
+            .HasMany(x => x.Items)
+            .WithOne(x => x.Order)
+            .HasForeignKey(x => x.OrderId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        builder.Navigation(x => x.Items)
+               .UsePropertyAccessMode(PropertyAccessMode.Field);
+    }
+}
