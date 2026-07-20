@@ -91,13 +91,13 @@ dotnet run
 A API ficará disponível em:
 
 ```
-http://localhost:8080
+https://localhost:7104
 ```
 
 Swagger:
 
 ```
-http://localhost:8080/swagger
+https://localhost:7104/swagger
 ```
 
 ---
