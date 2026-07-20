@@ -208,6 +208,8 @@ Executar testes:
 dotnet test
 ```
 
+ou clicar para *Executar Todos os Testes* no menu superior
+
 Testes implementados:
 
 * CreateOrderCommandHandler
