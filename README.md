@@ -53,18 +53,8 @@ Principais padrões utilizados:
 Necessário ter instalado:
 
 * .NET SDK 10
-* Visual Studio 2026 18.10+ (opcional)
+* Visual Studio 2026 18.8.0
 * Git
-
----
-
-## Clonar o projeto
-
-```bash
-git clone <repository-url>
-
-cd OrderManagement
-```
 
 ---
 
