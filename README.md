@@ -76,16 +76,16 @@ As migrations são aplicadas automaticamente durante a inicialização da API at
 
 ## Executar a API
 
-Acesse o projeto:
+No menu superior cesse o projeto:
 
 ```bash
-cd OrderManagement.Api
+OrderManagement.Api
 ```
 
 Execute:
 
 ```bash
-dotnet run
+Clicando no botão de depurar no menu superior
 ```
 
 A API ficará disponível em:
