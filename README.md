@@ -66,15 +66,11 @@ dotnet restore
 
 ---
 
-## Executar migrations
+## Banco de dados
 
-Na raiz da solução:
+A aplicação utiliza SQLite.
 
-```bash
-dotnet ef database update \
---project OrderManagement.Infrastructure \
---startup-project OrderManagement.Api
-```
+As migrations são aplicadas automaticamente durante a inicialização da API através do Entity Framework Core.
 
 ---
 
